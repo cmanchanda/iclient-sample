@@ -1,3 +1,4 @@
 const meta = document.createElement('meta');
 meta.httpEquiv = "origin-trial";
 meta.content = "AxaXO6KG1aE0DZnnJOLMPI5ExyP5HQARxTJwJ+f0+R3D5860wl7lILJWil4zNMi3LuCsoXpfGpIBdv7RA6PawQ0AAACZeyJvcmlnaW4iOiJodHRwczovL2NtYW5jaGFuZGEuZ2l0aHViLmlvOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmciLCJleHBpcnkiOjE3MjU0MDc5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9";
+document.head.appendChild(meta);

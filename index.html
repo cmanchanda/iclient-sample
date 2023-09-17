@@ -178,6 +178,10 @@ function doPurchaseWithTyroUI() {
     var amount = $("#amount").val();
     var cashout = $("#cashout").val();
     var iclient = new system[0].IClientWithUI(apiKey, posProductInfo);
+    var meta = document.createElement('meta');
+    meta.httpEquiv = "origin-trial";
+    meta.content = "AxaXO6KG1aE0DZnnJOLMPI5ExyP5HQARxTJwJ+f0+R3D5860wl7lILJWil4zNMi3LuCsoXpfGpIBdv7RA6PawQ0AAACZeyJvcmlnaW4iOiJodHRwczovL2NtYW5jaGFuZGEuZ2l0aHViLmlvOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmciLCJleHBpcnkiOjE3MjU0MDc5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9";
+    document.getElementsByTagName('head')[0].appendChild(meta);
     iclient.initiatePurchase({amount: amount, cashout: cashout, integratedReceipt: true}, {
         receiptCallback: function (receipt) {
             console.log("Print merchant receipt:");
